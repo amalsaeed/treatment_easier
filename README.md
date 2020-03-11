@@ -21,6 +21,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ./develop up -d
 ```
 
+After it finishes installation rin the following:
+
 ```bash
 php artisan route:clear
 ```
