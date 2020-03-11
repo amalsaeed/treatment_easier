@@ -10,17 +10,30 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">About Us</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Service</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Dentistry Clinic </a>
+                    <a class="dropdown-item" href="#">Ear And Throat Clinic</a>
+                    <a class="dropdown-item" href="#">Internist Clinic</a>
+                    <a class="dropdown-item" href="#">Children Clinic</a>
+                    <a class="dropdown-item" href="#">Orthopedic Clinic</a>
+                    <a class="dropdown-item" href="#">Chronic Clinic</a>
+                    <a class="dropdown-item" href="#">Heart Clinic</a>
+                    <a class="dropdown-item" href="#">Obstetrics and Gynecology Clinic</a>
+                </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronic Service</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Communication With The Doctor </a>
+                    <a class="dropdown-item" href="#">Appointment Booking</a>
+                    <a class="dropdown-item" href="#">Cancel An Appointment</a>
+                    <a class="dropdown-item" href="#">Change The Appointment Time</a>
+
                 </div>
             </li>
         </ul>
