@@ -13,7 +13,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 ## Set up development environment using docker
-- Install docker
+- Install docker from the following link [Docker](https://docs.docker.com/install/)
 
 #### Run the following commands in the project directory from the terminal
 
