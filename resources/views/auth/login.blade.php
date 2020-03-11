@@ -14,7 +14,10 @@
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+        <div class="mb-3">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </div>
+        <a class="mt-5 mb-3" href="/register">Register</a>
+        <p class="mt-5 mb-3 text-muted">©2020</p>
     </form>
 @endsection
