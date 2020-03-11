@@ -15,7 +15,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ## Set up development environment using docker
 - Install docker
 
-### Run the following commands in the project directory from the terminal
+#### Run the following commands in the project directory from the terminal
 
 ```bash
 ./develop up -d
