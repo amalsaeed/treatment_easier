@@ -9,7 +9,7 @@
 ./develop up -d
 ```
 
-Now you should rename .env.example to .env ad update the database data if needed.
+Now you should rename .env.example to .env and update the database info if needed.
 
 After the first command finishes, run the following:
 
