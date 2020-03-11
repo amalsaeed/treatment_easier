@@ -23,3 +23,8 @@ php artisan config:clear
 php artisan cache:clear
 ```
 
+Now you can access the application from your localhost on port 8090
+
+```bash
+http://localhost:8090/
+```

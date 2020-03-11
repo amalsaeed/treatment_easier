@@ -11,7 +11,7 @@ fi
 
 export CONTAINER_ENV=${CONTAINER_ENV:-local}
 export APP_ENV=${APP_ENV:-local}
-export APP_PORT=${APP_PORT:-8080}
+export APP_PORT=${APP_PORT:-8090}
 export DB_ROOT_PASS=${DB_ROOT_PASS:-}
 export DB_NAME=${DB_NAME:-treatment_db}
 export DB_USER=${DB_USER:-root}
