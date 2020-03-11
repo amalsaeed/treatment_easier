@@ -9,7 +9,9 @@
 ./develop up -d
 ```
 
-After it finishes installation run the following:
+Now you should rename .env.example to .env ad update the database data if needed.
+
+After the first command finishes, run the following:
 
 ```bash
 php artisan route:clear
