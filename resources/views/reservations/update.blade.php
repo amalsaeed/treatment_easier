@@ -71,7 +71,7 @@
 @endsection
 
 @section('content')
-    <form class="form-signin" role="form" method="POST" action="{{ route('reservations.store') }}" style="margin-top: 50px" autocomplete="off">
+    <form class="form-signin" role="form" method="POST" action="{{ route('reservations.update') }}" style="margin-top: 50px">
         {{ csrf_field() }}
 
         @if (\Session::has('success'))
@@ -145,7 +145,7 @@
         </div>
 
         <div class="mb-3 mt-5">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Confirm</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
         </div>
     </form>
 @endsection

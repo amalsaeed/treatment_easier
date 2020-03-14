@@ -10889,3 +10889,7 @@ a.text-dark:focus {
   height: 80%;
 }
 
+.bordered {
+  border: 1px solid #c0c0c0;
+}
+

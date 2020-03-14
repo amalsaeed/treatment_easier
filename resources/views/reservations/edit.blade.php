@@ -71,7 +71,7 @@
 @endsection
 
 @section('content')
-    <form class="form-signin" role="form" method="POST" action="{{ route('reservations.store') }}" style="margin-top: 50px" autocomplete="off">
+    <form class="form-signin" role="form" method="POST" action="{{ route('reservations.update', $reservation->id) }}" style="margin-top: 50px"  autocomplete="off">
         {{ csrf_field() }}
 
         @if (\Session::has('success'))
@@ -133,19 +133,19 @@
         <div class="d-flex justify-content-between align-items-center p-3 my-3 bg-purple rounded shadow-sm bordered">
             <div class="m-3 date" data-provide="datepicker">
                 <label for="date">Appointment Date</label>
-                <input type="text" class="form-control" name="date" id="date">
+                <input readonly type="text" class="form-control" name="date" data-today-byn="true" data-today-highlight="true" id="date" value="{{$reservation->date}}">
                 <div class="input-group-addon">
                     <span class="glyphicon glyphicon-th"></span>
                 </div>
             </div>
             <div class="m-3">
                 <label for="notes">Notes</label>
-                <textarea type="text"  id="notes" class="form-control" placeholder="Notes" name="notes"> {{old('notes')}}</textarea>
+                <textarea type="text"  id="notes" class="form-control" placeholder="Notes" name="notes">{{$reservation->notes}}</textarea>
             </div>
         </div>
 
         <div class="mb-3 mt-5">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Confirm</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
         </div>
     </form>
 @endsection

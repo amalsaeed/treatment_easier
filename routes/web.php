@@ -25,5 +25,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/reservations', 'ReservationController@index')->name('reservations');
     Route::get('/reservations/create', 'ReservationController@create')->name('reservations.create');
     Route::post('/reservations/store', 'ReservationController@store')->name('reservations.store');
+    Route::get('/reservations/edit/{id}', 'ReservationController@edit')->name('reservations.edit');
+    Route::post('/reservations/update/{id}', 'ReservationController@update')->name('reservations.update');
+    Route::post('/reservations/cancel/{id}', 'ReservationController@cancel')->name('reservations.cancel');
 });
 
