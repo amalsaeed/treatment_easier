@@ -34,7 +34,7 @@ services:
   mysql:
     image: mysql:5.7
     volumes:
-      - mysqldata:/var/lib/mysql
+      - data:/var/lib/mysql
     environment:
       - "MYSQL_ROOT_PASSWORD=${DB_ROOT_PASS}"
       - "MYSQL_DATABASE=${DB_NAME}"
@@ -48,7 +48,7 @@ networks:
     driver: "bridge"
 
 volumes:
-  mysqldata:
+  data:
     driver: "local"
   redisdata:
     driver: "local"

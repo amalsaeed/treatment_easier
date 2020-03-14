@@ -11,8 +11,17 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('home');
 });
 
 Auth::routes();
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/profile', 'ProfileController@index')->name('profile');
+    Route::post('/profile/update', 'ProfileController@update')->name('profile.update');
+});
+
