@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
-Auth::routes();
+Route::get('/admin/login', 'Auth\LoginController@show_admin_login_page');
+Route::post('/admin/login', 'Auth\LoginController@adminLogin');
 
+Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/profile', 'ProfileController@index')->name('profile');
@@ -28,5 +30,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/reservations/edit/{id}', 'ReservationController@edit')->name('reservations.edit');
     Route::post('/reservations/update/{id}', 'ReservationController@update')->name('reservations.update');
     Route::post('/reservations/cancel/{id}', 'ReservationController@cancel')->name('reservations.cancel');
+});
+
+Route::group(['middleware' => ['auth:admin']], function () {
+    Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::get('/admin/doctors', 'AdminController@doctors')->name('admin.doctors');
+    Route::get('/admin/clinics', 'AdminController@clinics')->name('admin.clinics');
 });
 

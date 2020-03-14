@@ -5,7 +5,7 @@
 @section('content')
     <main role="main" class="container" style="margin-top: 100px;">
         @if (\Session::has('success'))
-            <div class="alert alert-success" style="font-size: 12px">
+            <div class="alert alert-success" style="font-size: 14px">
                 {!! \Session::get('success') !!}
             </div>
         @endif

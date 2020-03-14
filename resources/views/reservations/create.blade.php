@@ -75,7 +75,7 @@
         {{ csrf_field() }}
 
         @if (\Session::has('success'))
-            <div class="alert alert-success" style="font-size: 12px">
+            <div class="alert alert-success" style="font-size: 14px">
                 {!! \Session::get('success') !!}
             </div>
         @endif
