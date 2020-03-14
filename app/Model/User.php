@@ -17,4 +17,13 @@ class User extends Model
     {
         return $this->hasOne(Profile::class, 'user_id');
     }
+
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class, 'user_id');
+    }
 }

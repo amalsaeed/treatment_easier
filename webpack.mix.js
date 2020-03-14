@@ -1,5 +1,5 @@
 const mix = require('laravel-mix');
-
+const bower_path = './bower_components/';
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management

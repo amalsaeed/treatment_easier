@@ -17,7 +17,7 @@ class CreateDoctorsTable extends Migration
             $table->increments('id');
             $table->text('name');
             $table->text('mobile');
-            $table->unsignedInteger('clinic_id');
+            $table->integer('clinic_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('clinic_id')->references('id')->on('clinics');
