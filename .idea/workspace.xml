@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ec7b4c-a30b-4ad6-9506-4a51ec6f27b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/About.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/Throat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/Throat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dentistry.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dentistry.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="44ec7b4c-a30b-4ad6-9506-4a51ec6f27b9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +28,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/About.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="125" selection-start-line="16" selection-start-column="125" selection-end-line="16" selection-end-column="125" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#221#249#0#HTML" expanded="true" />
+                <element signature="e#221#266#0#HTML" expanded="true" />
+                <element signature="e#576#616#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -451,13 +444,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58521000" />
+    <option name="totallyTimeSpent" value="58884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16239317" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16239317" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -472,7 +464,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.39489797" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.39489797" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -848,11 +840,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/About.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="125" selection-start-line="16" selection-start-column="125" selection-end-line="16" selection-end-column="125" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#221#249#0#HTML" expanded="true" />
+            <element signature="e#221#266#0#HTML" expanded="true" />
+            <element signature="e#576#616#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
