@@ -31,7 +31,7 @@ class AdminController extends Controller
             'name'          => 'required',
             'mobile'        => 'required',
             'clinic'        => 'required',
-            'id_number'        => 'required|digits:10'
+            'id_number'     => 'required|digits:10'
         ]);
 
         if($validator->fails()) {
@@ -43,7 +43,9 @@ class AdminController extends Controller
             [
                 'name'          => request('name'),
                 'mobile'        => request('mobile'),
+                'email'         => request('email'),
                 'clinic_id'     => request('clinic'),
+                'password'      => '$2y$10$2VSI3/6E4sinXYWYS1DDs.pjiX2nVBMzVNp3i6rom.r6I4QFBy4ma'
             ]
         );
 

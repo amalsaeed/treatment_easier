@@ -15,6 +15,9 @@ class AddIdNumberToDoctorsTable extends Migration
     {
         Schema::table('doctors', function (Blueprint $table) {
             $table->string('id_number');
+            $table->string('email')->unique()->nullable();
+            $table->string('password')->nullable();
+            $table->rememberToken();
         });
     }
 

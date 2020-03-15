@@ -456,6 +456,12 @@
                         </div>
                         <div class="d-flex flex-column">
                             <div class="m-3">
+                                <label for="inputEmail">Email</label>
+                                <input type="text" value="{{old('email')}}" id="inputEmail" class="form-control" placeholder="Email" required="" name="email">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="m-3">
                                 <label for="inputID">ID Number</label>
                                 <input type="text" value="{{old('id_number')}}" id="inputID" class="form-control" placeholder="Id Number" required="" name="id_number">
                             </div>

@@ -415,10 +415,6 @@
                             <p style="display: inline-block">
                                 {{$clinic->name}}
                             </p>
-                            <div class="pull-right" style="display: inline-block">
-                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="trash"><span class="glyphicon glyphicon-trash text-danger"></span></a>
-                            </div>
                         </li>
                     @endforeach
                 </ul>

@@ -17,6 +17,8 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/admin/login', 'Auth\LoginController@show_admin_login_page');
 Route::post('/admin/login', 'Auth\LoginController@adminLogin');
+Route::get('/doctor/login', 'Auth\LoginController@show_doctor_login_page');
+Route::post('/doctor/login', 'Auth\LoginController@doctorLogin');
 
 Auth::routes();
 
@@ -38,6 +40,10 @@ Route::group(['middleware' => ['auth:admin']], function () {
     Route::post('/admin/doctors', 'AdminController@storeDoctor')->name('admin.doctors.store');
     Route::get('/admin/clinics', 'AdminController@clinics')->name('admin.clinics');
     Route::post('/admin/clinics', 'AdminController@storeClinic')->name('admin.clinics.store');
+});
+
+Route::group(['middleware' => ['auth:doctor']], function () {
+    Route::get('/doctor/dashboard', 'DoctorController@dashboard')->name('doctor.dashboard');
 });
 
 

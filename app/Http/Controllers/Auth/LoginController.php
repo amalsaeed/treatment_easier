@@ -63,4 +63,23 @@ class LoginController extends Controller
 
         return back()->withInput($request->only('email', 'remember'));
     }
+
+    public function show_doctor_login_page()
+    {
+        return view('doctor.login');
+    }
+
+    public function doctorLogin(Request $request)
+    {
+        $this->validate($request, [
+            'email'     => 'required|email',
+            'password'  => 'required|min:6'
+        ]);
+
+        if (auth('doctor')->attempt(['email' => request('email'), 'password' => request('password')], request('remember'))) {
+            return redirect()->intended('/doctor/dashboard');
+        }
+
+        return back()->withErrors(['Unauthorized'])->withInput($request->only('email', 'remember'));
+    }
 }
