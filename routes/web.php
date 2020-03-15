@@ -14,6 +14,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
+Route::get('/about', 'PagesController@about')->name('about');
 
 Route::get('/admin/login', 'Auth\LoginController@show_admin_login_page');
 Route::post('/admin/login', 'Auth\LoginController@adminLogin');

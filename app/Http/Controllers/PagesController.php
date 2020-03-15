@@ -32,9 +32,11 @@ class PagesController extends Controller
         return view('pages.Throat');
     }
 
-
     public function OphthalmologyClinics() {
         return view('pages.Ophthalmology');
+    }
+    public function about() {
+        return view('pages.about');
     }
 
 }
