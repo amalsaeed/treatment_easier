@@ -424,6 +424,41 @@
                 </ul>
             </div>
         </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="h3 mb-5 font-weight-normal">Add Doctor</h1>
+            </div>
+            <div class="panel-body">
+                <form class="form-signin" role="form" method="POST" action="{{route('admin.clinics.store')}}" autocomplete="off">
+                    {{ csrf_field() }}
+
+                    @if (\Session::has('success'))
+                        <div class="alert alert-success" style="font-size: 14px">
+                            {!! \Session::get('success') !!}
+                        </div>
+                    @endif
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            @foreach ($errors->all() as $error)
+                                <p>{{ $error }}</p>
+                            @endforeach
+                        </div>
+                    @endif
+                    <div class="d-flex justify-content-between align-items-center p-3 my-3 bg-purple rounded shadow-sm bordered">
+                        <div class="d-flex flex-column">
+                            <div class="m-5">
+                                <label for="inputName">Clinic Name</label>
+                                <input type="text" value="{{old('name')}}" id="inputName" class="form-control" placeholder="Name" required="" name="name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mt-5" style="margin-top: 10px">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <footer class="pull-left footer">
         <p class="col-md-12">

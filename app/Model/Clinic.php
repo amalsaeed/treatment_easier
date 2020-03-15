@@ -8,6 +8,8 @@ class Clinic extends Model
 {
     public $timestamps = true;
 
+    protected $fillable = ['name'];
+
     public function doctors()
     {
         return $this->hasMany(Doctor::class, 'doctor_id');

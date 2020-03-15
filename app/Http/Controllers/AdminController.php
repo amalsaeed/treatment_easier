@@ -14,7 +14,11 @@ class AdminController extends Controller
 
     public function doctors() {
         $doctors = Doctor::all();
-        return view('admin.doctors')->with('doctors', $doctors);
+        $clinics = Clinic::all();
+
+        return view('admin.doctors')
+            ->with('clinics', $clinics)
+            ->with('doctors', $doctors);
     }
 
     public function clinics() {
@@ -22,15 +26,42 @@ class AdminController extends Controller
         return view('admin.clinics')->with('clinics', $clinics);
     }
 
-    public function createDoctor() {
-
-    }
-
     public function storeDoctor(Request $request) {
+        $validator = \Validator::make($request->all(), [
+            'name'          => 'required',
+            'mobile'        => 'required',
+            'clinic'        => 'required',
+            'id_number'        => 'required|digits:10'
+        ]);
 
+        if($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        Doctor::updateOrCreate(
+            ['id_number'    => request('id_number')],
+            [
+                'name'          => request('name'),
+                'mobile'        => request('mobile'),
+                'clinic_id'     => request('clinic'),
+            ]
+        );
+
+        return redirect()->back()->with('success', 'Doctor has been updated successfully');
     }
+
 
     public function storeClinic(Request $request) {
+        $validator = \Validator::make($request->all(), [
+            'name'          => 'required'
+        ]);
 
+        if($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        Clinic::create(['name' => request('name')]);
+
+        return redirect()->back()->with('success', 'Clinic has been added successfully');
     }
 }

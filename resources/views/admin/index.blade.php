@@ -169,8 +169,6 @@
                 position: relative;
                 height: 0;
                 min-height: 0;
-                background-color:none !important;
-                border-color: none !important;
             }
             .side-menu .brand-name-wrapper .navbar-brand {
                 display: inline-block;

@@ -20,7 +20,6 @@
                 </li>
             @endauth
 
-            @auth
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Service</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -34,10 +33,7 @@
                     <a class="dropdown-item" href="{{route('Gynecology')}}">Obstetrics and Gynecology Clinic</a>
                 </div>
             </li>
-
-            @endauth
         </ul>
-
         @auth
             <a class="btn btn-outline-success my-2 my-sm-0" href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
             <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
