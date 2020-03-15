@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         \App\Model\Admin::insert([
             'name'      => 'admin',
-            'email'     => 'admin@tamkeen.it',
+            'email'     => 'admin@admin.it',
             'password'  => bcrypt(123456)
         ]);
     }
