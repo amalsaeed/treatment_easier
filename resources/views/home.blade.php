@@ -1,4 +1,16 @@
 @extends('layout.app')
+@section('style')
+    <style>
+
+        .img{
+
+            margin: auto;
+
+        }
+        }
+    </style>
+
+
 
 @section('content')
     <main role="main">
@@ -7,26 +19,14 @@
         </div>
         <div class="container">
             <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-            </div>
-
-            <hr>
-        </div> <!-- /container -->
+       </div> <!-- /container -->
+    <div class = "img">
+        <img src="{{asset('dist/images/fa.png')}}" width="100" height="100">
+        <img src="{{asset('dist/images/tw.png')}}" width="100" height="100">
+        <img src="{{asset('dist/images/ins.png')}}" width="100" height="100">
+        <img src="{{asset('dist/images/wh.png')}}" width="100" height="100">
+        <img src="{{asset('dist/images/sc.png')}}" width="100" height="100">
+    </div>
     </main>
 @endsection
 

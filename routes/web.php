@@ -38,3 +38,14 @@ Route::group(['middleware' => ['auth:admin']], function () {
     Route::get('/admin/clinics', 'AdminController@clinics')->name('admin.clinics');
 });
 
+
+
+//pages
+Route::get('/clinics/dentistry', 'PagesController@dentistryClinics')->name('dentistry');
+Route::get('/clinics/Orthopedic', 'PagesController@OrthopedicClinics')->name('Orthopedic');
+Route::get('/clinics/Children', 'PagesController@ChildrenClinics')->name('Children');
+Route::get('/clinics/Heart', 'PagesController@HeartClinics')->name('Heart');
+Route::get('/clinics/Internist', 'PagesController@InternistClinics')->name('Internist');
+Route::get('/clinics/Gynecology', 'PagesController@GynecologyClinics')->name('Gynecology');
+Route::get('/clinics/Ophthalmology', 'PagesController@OphthalmologyClinics')->name('Ophthalmology');
+Route::get('/clinics/Throat', 'PagesController@ThroatClinics')->name('Throat');

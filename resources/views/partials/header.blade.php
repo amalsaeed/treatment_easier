@@ -24,26 +24,17 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Service</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Dentistry Clinic </a>
-                    <a class="dropdown-item" href="#">Ear And Throat Clinic</a>
-                    <a class="dropdown-item" href="#">Internist Clinic</a>
-                    <a class="dropdown-item" href="#">Children Clinic</a>
-                    <a class="dropdown-item" href="#">Orthopedic Clinic</a>
-                    <a class="dropdown-item" href="#">Chronic Clinic</a>
-                    <a class="dropdown-item" href="#">Heart Clinic</a>
-                    <a class="dropdown-item" href="#">Obstetrics and Gynecology Clinic</a>
+                    <a class="dropdown-item" href="{{route('dentistry')}}">Dentistry Clinic </a>
+                    <a class="dropdown-item" href="{{route('Throat')}}">Ear And Throat Clinic</a>
+                    <a class="dropdown-item" href="{{route('Internist')}}">Internist Clinic</a>
+                    <a class="dropdown-item" href="{{route('Children')}}">Children Clinic</a>
+                    <a class="dropdown-item" href="{{route('Orthopedic')}}">Orthopedic Clinic</a>
+                    <a class="dropdown-item" href="{{route('Ophthalmology')}}">Ophthalmology Clinic</a>
+                    <a class="dropdown-item" href="{{route('Heart')}}">Heart Clinic</a>
+                    <a class="dropdown-item" href="{{route('Gynecology')}}">Obstetrics and Gynecology Clinic</a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronic Service</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Communication With The Doctor </a>
-                    <a class="dropdown-item" href="#">Appointment Booking</a>
-                    <a class="dropdown-item" href="#">Cancel An Appointment</a>
-                    <a class="dropdown-item" href="#">Change The Appointment Time</a>
 
-                </div>
-            </li>
             @endauth
         </ul>
 
