@@ -36,7 +36,7 @@ class PagesController extends Controller
         return view('pages.Ophthalmology');
     }
     public function about() {
-        return view('pages.about');
+        return view('pages.About');
     }
 
 }
